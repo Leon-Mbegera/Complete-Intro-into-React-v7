@@ -1007,8 +1007,9 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 // import React from "react";
 var _reactDom = require("react-dom");
-var _petJs = require("./Pet.js");
-var _petJsDefault = parcelHelpers.interopDefault(_petJs);
+var _searchParams = require("./SearchParams");
+var _searchParamsDefault = parcelHelpers.interopDefault(_searchParams);
+// import Pet from "./Pet.js";
 // const App = () => {
 //   return React.createElement("div", {}, [
 //     React.createElement("h1", {}, "Adopt Me!"),
@@ -1036,40 +1037,31 @@ const App = ()=>{
                 children: "Adopt Me!"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_petJsDefault.default, {
-                name: "Luna",
-                animal: "dog",
-                breed: "Havanese"
-            }, void 0, false, {
-                fileName: "src/App.js",
                 lineNumber: 30,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_petJsDefault.default, {
-                name: "Pepper",
-                animal: "bird",
-                breed: "Cockatiel"
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
             }, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 31,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_petJsDefault.default, {
-                name: "Doink",
-                animal: "cat",
-                breed: "Mix"
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
             }, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 32,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 5
     }, undefined));
 };
@@ -1077,7 +1069,7 @@ _c = App;
 _reactDom.render(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(App, {
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 37,
+    lineNumber: 38,
     columnNumber: 8
 }, undefined), document.getElementById("root"));
 var _c;
@@ -1088,7 +1080,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-dom":"j6uA9","./Pet.js":"98zmG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./SearchParams":"gR5jP"}],"iTorj":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
 
@@ -22834,67 +22826,7 @@ module.exports = require('./cjs/scheduler-tracing.development.js');
     exports.unstable_wrap = unstable_wrap;
 })();
 
-},{}],"98zmG":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$acd4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$acd4.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-// import React from "react";
-// export default function Pet({ name, animal, breed }) {
-//   return React.createElement("div", {}, [
-//     React.createElement("h1", {}, name),
-//     React.createElement("h2", {}, animal),
-//     React.createElement("h2", {}, breed),
-//   ]);
-// }
-// Introduce JSX, What jsx tries to do is to shortcut the above syntax into readable code
-const Pet = (props)=>{
-    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
-                children: props.name
-            }, void 0, false, {
-                fileName: "src/Pet.js",
-                lineNumber: 16,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
-                children: props.animal
-            }, void 0, false, {
-                fileName: "src/Pet.js",
-                lineNumber: 17,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
-                children: props.breed
-            }, void 0, false, {
-                fileName: "src/Pet.js",
-                lineNumber: 18,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Pet.js",
-        lineNumber: 15,
-        columnNumber: 5
-    }, undefined));
-};
-_c = Pet;
-exports.default = Pet;
-var _c;
-$RefreshReg$(_c, "Pet");
-
-  $parcel$ReactRefreshHelpers$acd4.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -23044,6 +22976,70 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
+},{"react-refresh/runtime":"786KC"}],"gR5jP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ff62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ff62.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const SearchParams = ()=>{
+    const location = "Seattle";
+    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "search-params",
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+            children: [
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                    htmlFor: "location",
+                    children: [
+                        "location",
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                            id: "location",
+                            value: location,
+                            placeholder: "Location"
+                        }, void 0, false, {
+                            fileName: "src/SearchParams.js",
+                            lineNumber: 9,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/SearchParams.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                    children: "Submit"
+                }, void 0, false, {
+                    fileName: "src/SearchParams.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/SearchParams.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/SearchParams.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined));
+};
+_c = SearchParams;
+exports.default = SearchParams;
+var _c;
+$RefreshReg$(_c, "SearchParams");
+
+  $parcel$ReactRefreshHelpers$ff62.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
 
 //# sourceMappingURL=index.7271efb6.js.map
