@@ -1005,31 +1005,9 @@ $parcel$ReactRefreshHelpers$f00f.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-// import React from "react";
 var _reactDom = require("react-dom");
 var _searchParams = require("./SearchParams");
 var _searchParamsDefault = parcelHelpers.interopDefault(_searchParams);
-// import Pet from "./Pet.js";
-// const App = () => {
-//   return React.createElement("div", {}, [
-//     React.createElement("h1", {}, "Adopt Me!"),
-//     React.createElement(Pet, {
-//       name: "Luna",
-//       animal: "Dog",
-//       breed: "Havanese",
-//     }),
-//     React.createElement(Pet, {
-//       name: "Pepper",
-//       animal: "Bird",
-//       breed: "Cockatiel",
-//     }),
-//     React.createElement(Pet, {
-//       name: "Doink",
-//       animal: "Cat",
-//       breed: "Mix",
-//     }),
-//   ]);
-// };
 const App = ()=>{
     return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         children: [
@@ -1037,31 +1015,31 @@ const App = ()=>{
                 children: "Adopt Me!"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 30,
+                lineNumber: 7,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 31,
+                lineNumber: 8,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 32,
+                lineNumber: 9,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 33,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 29,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined));
 };
@@ -1069,7 +1047,7 @@ _c = App;
 _reactDom.render(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(App, {
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 38,
+    lineNumber: 15,
     columnNumber: 8
 }, undefined), document.getElementById("root"));
 var _c;
@@ -22986,8 +22964,11 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
 const SearchParams = ()=>{
-    const location = "Seattle";
+    _s();
+    const [state, setState] = _react.useState("Tell me what's your motive");
     return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: "search-params",
         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
@@ -22998,38 +22979,40 @@ const SearchParams = ()=>{
                         "location",
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
                             id: "location",
-                            value: location,
-                            placeholder: "Location"
+                            value: state,
+                            placeholder: "Location",
+                            onChange: (e)=>setState(e.target.value)
                         }, void 0, false, {
                             fileName: "src/SearchParams.js",
-                            lineNumber: 9,
+                            lineNumber: 11,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/SearchParams.js",
-                    lineNumber: 7,
+                    lineNumber: 9,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                     children: "Submit"
                 }, void 0, false, {
                     fileName: "src/SearchParams.js",
-                    lineNumber: 11,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/SearchParams.js",
-            lineNumber: 6,
+            lineNumber: 8,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/SearchParams.js",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined));
 };
+_s(SearchParams, "7g3a+/6Aia8G4fH3LL/C5gHUoiY=");
 _c = SearchParams;
 exports.default = SearchParams;
 var _c;
@@ -23040,6 +23023,6 @@ $RefreshReg$(_c, "SearchParams");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
 
 //# sourceMappingURL=index.7271efb6.js.map
