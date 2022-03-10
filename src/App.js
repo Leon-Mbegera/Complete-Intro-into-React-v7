@@ -6,8 +6,6 @@ const App = () => {
     <div>
       <h1>Adopt Me!</h1>
       <SearchParams />
-      <SearchParams />
-      <SearchParams />
     </div>
   );
 };

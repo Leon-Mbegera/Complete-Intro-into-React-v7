@@ -1023,18 +1023,6 @@ const App = ()=>{
                 fileName: "src/App.js",
                 lineNumber: 8,
                 columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 9,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 10,
-                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
@@ -1047,7 +1035,7 @@ _c = App;
 _reactDom.render(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(App, {
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 15,
+    lineNumber: 13,
     columnNumber: 8
 }, undefined), document.getElementById("root"));
 var _c;
@@ -22967,6 +22955,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _pet = require("./Pet");
 var _petDefault = parcelHelpers.interopDefault(_pet);
+var _useBreedList = require("./useBreedList");
+var _useBreedListDefault = parcelHelpers.interopDefault(_useBreedList);
 var _s = $RefreshSig$();
 const ANIMALS = [
     "bird",
@@ -22977,11 +22967,11 @@ const ANIMALS = [
 ];
 const SearchParams = ()=>{
     _s();
-    const [state, setState] = _react.useState("Tell me what's your motive");
+    const [location, updateLocation] = _react.useState("Nairobi");
     const [animal1, updateAnimal] = _react.useState("");
     const [breed1, updateBreed] = _react.useState("");
     const [pets, setPets] = _react.useState([]);
-    const breeds = [];
+    const [breeds] = _useBreedListDefault.default(animal1);
     _react.useEffect(()=>{
         requestPets();
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -23001,18 +22991,18 @@ const SearchParams = ()=>{
                             "location",
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
                                 id: "location",
-                                value: state,
+                                value: location,
                                 placeholder: "Location",
-                                onChange: (e)=>setState(e.target.value)
+                                onChange: (e)=>updateLocation(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/SearchParams.js",
-                                lineNumber: 31,
+                                lineNumber: 32,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 29,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -23031,19 +23021,19 @@ const SearchParams = ()=>{
                                         children: animal
                                     }, animal, false, {
                                         fileName: "src/SearchParams.js",
-                                        lineNumber: 49,
+                                        lineNumber: 50,
                                         columnNumber: 15
                                     }, undefined)
                                 )
                             }, void 0, false, {
                                 fileName: "src/SearchParams.js",
-                                lineNumber: 40,
+                                lineNumber: 41,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -23062,7 +23052,7 @@ const SearchParams = ()=>{
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
                                     }, void 0, false, {
                                         fileName: "src/SearchParams.js",
-                                        lineNumber: 64,
+                                        lineNumber: 65,
                                         columnNumber: 13
                                     }, undefined),
                                     breeds.map((breed)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
@@ -23070,33 +23060,33 @@ const SearchParams = ()=>{
                                             children: breed
                                         }, breed, false, {
                                             fileName: "src/SearchParams.js",
-                                            lineNumber: 66,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, undefined)
                                     )
                                 ]
                             }, void 0, true, {
                                 fileName: "src/SearchParams.js",
-                                lineNumber: 57,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 55,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                         children: "Submit"
                     }, void 0, false, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 72,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/SearchParams.js",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined),
             pets.map((pet)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_petDefault.default, {
@@ -23105,18 +23095,22 @@ const SearchParams = ()=>{
                     breed: pet.breed
                 }, pet.id, false, {
                     fileName: "src/SearchParams.js",
-                    lineNumber: 75,
+                    lineNumber: 76,
                     columnNumber: 9
                 }, undefined)
             )
         ]
     }, void 0, true, {
         fileName: "src/SearchParams.js",
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 5
     }, undefined));
 };
-_s(SearchParams, "0COPEHS+mSR+XMcNdHZnx1w9ydU=");
+_s(SearchParams, "vNbLLFFL+VV+O8ozh+NRBV6ygI8=", false, function() {
+    return [
+        _useBreedListDefault.default
+    ];
+});
 _c = SearchParams;
 exports.default = SearchParams;
 var _c;
@@ -23127,7 +23121,7 @@ $RefreshReg$(_c, "SearchParams");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Pet":"98zmG"}],"98zmG":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Pet":"98zmG","./useBreedList":"9NpcM"}],"98zmG":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$acd4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -23178,6 +23172,52 @@ $RefreshReg$(_c, "Pet");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9NpcM":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2adc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2adc.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const localCache = {
+};
+function useBreedList(animal) {
+    _s();
+    const [breedList, setBreedList] = _react.useState([]);
+    const [status, setStatus] = _react.useState("unloaded");
+    _react.useEffect(()=>{
+        if (!animal) setBreedList([]);
+        else if (localCache[animal]) setBreedList(localCache[animal]);
+        else requestBreedList();
+        async function requestBreedList() {
+            setBreedList([]);
+            setStatus("loading");
+            const res = await fetch(`http://pets-v2.dev-apis.com/breeds?animal=${animal}`);
+            const json = await res.json();
+            localCache[animal] = json.breeds || [];
+            setBreedList(localCache[animal]);
+            setStatus("loaded");
+        }
+    }, [
+        animal
+    ]);
+    return [
+        breedList,
+        status
+    ];
+}
+exports.default = useBreedList;
+_s(useBreedList, "fwO6kCJGACy4buvWsnD+NOmO304=");
+
+  $parcel$ReactRefreshHelpers$2adc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
 
 //# sourceMappingURL=index.7271efb6.js.map
