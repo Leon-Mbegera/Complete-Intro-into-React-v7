@@ -9,7 +9,7 @@ const SearchParams = () => {
   const [animal, updateAnimal] = useState("");
   const [breed, updateBreed] = useState("");
   const [pets, setPets] = useState([]);
-  const [breeds] = useBreedList(animal);
+  const [breedList] = useBreedList(animal);
 
   useEffect(() => {
     requestPets();
@@ -26,7 +26,12 @@ const SearchParams = () => {
 
   return (
     <div className="search-params">
-      <form>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          requestPets();
+        }}
+      >
         <label htmlFor="location">
           location
           <input
@@ -56,14 +61,14 @@ const SearchParams = () => {
         <label htmlFor="breed">
           Breed
           <select
-            disabled={!breeds.length}
+            disabled={!breedList.length}
             id="breed"
             value={breed}
             onChange={(e) => updateBreed(e.target.value)}
             onBlur={(e) => updateBreed(e.target.value)}
           >
             <option />
-            {breeds.map((breed) => (
+            {breedList.map((breed) => (
               <option key={breed} value={breed}>
                 {breed}
               </option>

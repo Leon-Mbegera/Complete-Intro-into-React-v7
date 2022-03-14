@@ -22971,7 +22971,7 @@ const SearchParams = ()=>{
     const [animal1, updateAnimal] = _react.useState("");
     const [breed1, updateBreed] = _react.useState("");
     const [pets, setPets] = _react.useState([]);
-    const [breeds] = _useBreedListDefault.default(animal1);
+    const [breedList] = _useBreedListDefault.default(animal1);
     _react.useEffect(()=>{
         requestPets();
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -22984,6 +22984,10 @@ const SearchParams = ()=>{
         className: "search-params",
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+                onSubmit: (e)=>{
+                    e.preventDefault();
+                    requestPets();
+                },
                 children: [
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
                         htmlFor: "location",
@@ -22996,13 +23000,13 @@ const SearchParams = ()=>{
                                 onChange: (e)=>updateLocation(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/SearchParams.js",
-                                lineNumber: 32,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 30,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -23021,19 +23025,19 @@ const SearchParams = ()=>{
                                         children: animal
                                     }, animal, false, {
                                         fileName: "src/SearchParams.js",
-                                        lineNumber: 50,
+                                        lineNumber: 55,
                                         columnNumber: 15
                                     }, undefined)
                                 )
                             }, void 0, false, {
                                 fileName: "src/SearchParams.js",
-                                lineNumber: 41,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 39,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -23041,7 +23045,7 @@ const SearchParams = ()=>{
                         children: [
                             "Breed",
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("select", {
-                                disabled: !breeds.length,
+                                disabled: !breedList.length,
                                 id: "breed",
                                 value: breed1,
                                 onChange: (e)=>updateBreed(e.target.value)
@@ -23052,35 +23056,35 @@ const SearchParams = ()=>{
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
                                     }, void 0, false, {
                                         fileName: "src/SearchParams.js",
-                                        lineNumber: 65,
+                                        lineNumber: 70,
                                         columnNumber: 13
                                     }, undefined),
-                                    breeds.map((breed)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
+                                    breedList.map((breed)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
                                             value: breed,
                                             children: breed
                                         }, breed, false, {
                                             fileName: "src/SearchParams.js",
-                                            lineNumber: 67,
+                                            lineNumber: 72,
                                             columnNumber: 15
                                         }, undefined)
                                     )
                                 ]
                             }, void 0, true, {
                                 fileName: "src/SearchParams.js",
-                                lineNumber: 58,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 56,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                         children: "Submit"
                     }, void 0, false, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 73,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -23095,7 +23099,7 @@ const SearchParams = ()=>{
                     breed: pet.breed
                 }, pet.id, false, {
                     fileName: "src/SearchParams.js",
-                    lineNumber: 76,
+                    lineNumber: 81,
                     columnNumber: 9
                 }, undefined)
             )
@@ -23106,7 +23110,7 @@ const SearchParams = ()=>{
         columnNumber: 5
     }, undefined));
 };
-_s(SearchParams, "vNbLLFFL+VV+O8ozh+NRBV6ygI8=", false, function() {
+_s(SearchParams, "q8/LU9I253d+JtMU1/28JGtW9Bc=", false, function() {
     return [
         _useBreedListDefault.default
     ];
