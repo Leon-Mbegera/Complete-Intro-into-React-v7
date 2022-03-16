@@ -1016,11 +1016,18 @@ const App = ()=>{
     return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_react.StrictMode, {
         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.BrowserRouter, {
             children: [
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
-                    children: "Adopt Me!"
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("header", {
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
+                        to: "/",
+                        children: "Adopt Me!"
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 13,
+                        columnNumber: 11
+                    }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Routes, {
@@ -1031,7 +1038,7 @@ const App = ()=>{
                             }, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 13,
+                            lineNumber: 16,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -1040,24 +1047,24 @@ const App = ()=>{
                             }, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 14,
+                            lineNumber: 17,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.js",
-                    lineNumber: 12,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 10,
+            lineNumber: 11,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined));
 };
@@ -1065,7 +1072,7 @@ _c = App;
 _reactDom.render(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(App, {
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 21,
+    lineNumber: 24,
     columnNumber: 8
 }, undefined), document.getElementById("root"));
 var _c;
@@ -25076,12 +25083,13 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
 const Pet = (props)=>{
     const { name , animal , breed , images , location , id  } = props;
     let hero = "http://pets-images.dev-apis.com/pets/none.jpg";
     if (images.length) hero = images[0];
-    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-        href: `/details/${id}`,
+    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
+        to: `/details/${id}`,
         target: "_self",
         className: "pet",
         children: [
@@ -25092,12 +25100,12 @@ const Pet = (props)=>{
                     alt: name
                 }, void 0, false, {
                     fileName: "src/Pet.js",
-                    lineNumber: 12,
+                    lineNumber: 14,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Pet.js",
-                lineNumber: 11,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25107,26 +25115,26 @@ const Pet = (props)=>{
                         children: name
                     }, void 0, false, {
                         fileName: "src/Pet.js",
-                        lineNumber: 15,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
                         children: `${animal} — ${breed} — ${location}`
                     }, void 0, false, {
                         fileName: "src/Pet.js",
-                        lineNumber: 16,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Pet.js",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Pet.js",
-        lineNumber: 10,
+        lineNumber: 12,
         columnNumber: 5
     }, undefined));
 };
@@ -25140,7 +25148,7 @@ $RefreshReg$(_c, "Pet");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aUpxx":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"fdOAw"}],"aUpxx":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0da2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
