@@ -52,6 +52,9 @@ const SearchParams = () => {
               updateBreed("");
             }}
           >
+            <option value="" disabled>
+              select animal
+            </option>
             {ANIMALS.map((animal) => (
               <option key={animal} value={animal}>
                 {animal}

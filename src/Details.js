@@ -1,6 +1,9 @@
-// export default function Details() {
-//   <h1>Hi there !</h1>;
-// }
+import { Component } from "react";
+import { useParams } from "react-router-dom";
 
-const Details = () => <h1>Hi there !</h1>;
-export default Details;
+class Details extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+}
