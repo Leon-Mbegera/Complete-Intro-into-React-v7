@@ -8,8 +8,9 @@ class Details extends Component {
   }
 
   async componentDidMount() {
+    console.log(this.props);
     const res = await fetch(
-      `http://pets-v2.dev-apis.com/pets?id=${this.props.params.id}`
+      `http://pets-v2.dev-apis.com/pets?id=${this.props.id}`
     );
     const json = await res.json();
     this.setState(Object.assign({ loading: false }, json.pets[0]));
@@ -35,8 +36,8 @@ class Details extends Component {
 }
 
 const WrappedDetails = () => {
-  const params = useParams();
-  return <Details params={params} />;
+  const { id } = useParams();
+  return <Details id={id} />;
 };
 
 export default WrappedDetails;

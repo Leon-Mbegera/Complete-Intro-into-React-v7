@@ -25178,7 +25178,8 @@ class Details extends _react.Component {
         };
     }
     async componentDidMount() {
-        const res = await fetch(`http://pets-v2.dev-apis.com/pets?id=${this.props.params.id}`);
+        console.log(this.props);
+        const res = await fetch(`http://pets-v2.dev-apis.com/pets?id=${this.props.id}`);
         const json = await res.json();
         this.setState(Object.assign({
             loading: false
@@ -25189,7 +25190,7 @@ class Details extends _react.Component {
             children: "Loading..."
         }, void 0, false, {
             fileName: "src/Details.js",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 14
         }, this));
         const { animal , breed , city , state , description , name  } = this.state;
@@ -25201,14 +25202,14 @@ class Details extends _react.Component {
                         children: name
                     }, void 0, false, {
                         fileName: "src/Details.js",
-                        lineNumber: 27,
+                        lineNumber: 28,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
                         children: `${animal} — ${breed} — ${city}, ${state}`
                     }, void 0, false, {
                         fileName: "src/Details.js",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -25218,41 +25219,41 @@ class Details extends _react.Component {
                         ]
                     }, void 0, true, {
                         fileName: "src/Details.js",
-                        lineNumber: 29,
+                        lineNumber: 30,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                         children: description
                     }, void 0, false, {
                         fileName: "src/Details.js",
-                        lineNumber: 30,
+                        lineNumber: 31,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Details.js",
-                lineNumber: 26,
+                lineNumber: 27,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "src/Details.js",
-            lineNumber: 25,
+            lineNumber: 26,
             columnNumber: 7
         }, this));
     }
 }
 const WrappedDetails = ()=>{
     _s();
-    const params = _reactRouterDom.useParams();
+    const { id  } = _reactRouterDom.useParams();
     return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(Details, {
-        params: params
+        id: id
     }, void 0, false, {
         fileName: "src/Details.js",
-        lineNumber: 39,
+        lineNumber: 40,
         columnNumber: 10
     }, undefined));
 };
-_s(WrappedDetails, "+jVsTcECDRo3yq2d7EQxlN9Ixog=", false, function() {
+_s(WrappedDetails, "yQgCIz/jJfqV1l9s2yoba81MT5A=", false, function() {
     return [
         _reactRouterDom.useParams
     ];
