@@ -49,7 +49,6 @@ const SearchParams = () => {
             value={animal}
             onChange={(e) => {
               updateAnimal(e.target.value);
-              updateBreed("");
             }}
           >
             <option value="" disabled>
