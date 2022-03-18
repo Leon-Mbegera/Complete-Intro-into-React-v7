@@ -1022,12 +1022,12 @@ const App = ()=>{
                         children: "Adopt Me!"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 13,
+                        lineNumber: 12,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 12,
+                    lineNumber: 11,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Routes, {
@@ -1038,7 +1038,7 @@ const App = ()=>{
                             }, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 16,
+                            lineNumber: 15,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -1047,32 +1047,32 @@ const App = ()=>{
                             }, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 17,
+                            lineNumber: 16,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.js",
-                    lineNumber: 15,
+                    lineNumber: 14,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 11,
+            lineNumber: 10,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 10,
-        columnNumber: 5
+        lineNumber: 9,
+        columnNumber: 10
     }, undefined));
 };
 _c = App;
 _reactDom.render(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(App, {
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 24,
+    lineNumber: 22,
     columnNumber: 8
 }, undefined), document.getElementById("root"));
 var _c;
@@ -24688,8 +24688,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-// import Pet from "./Pet";
+var _react = require("react"); // import Pet from "./Pet";
 var _useBreedList = require("./useBreedList");
 var _useBreedListDefault = parcelHelpers.interopDefault(_useBreedList);
 var _results = require("./Results");
@@ -24737,13 +24736,13 @@ const SearchParams = ()=>{
                                 onChange: (e)=>updateLocation(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/SearchParams.js",
-                                lineNumber: 38,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 36,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -24763,7 +24762,7 @@ const SearchParams = ()=>{
                                         children: "select animal"
                                     }, void 0, false, {
                                         fileName: "src/SearchParams.js",
-                                        lineNumber: 54,
+                                        lineNumber: 37,
                                         columnNumber: 13
                                     }, undefined),
                                     ANIMALS.map((animal)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
@@ -24771,20 +24770,20 @@ const SearchParams = ()=>{
                                             children: animal
                                         }, animal, false, {
                                             fileName: "src/SearchParams.js",
-                                            lineNumber: 58,
-                                            columnNumber: 15
+                                            lineNumber: 40,
+                                            columnNumber: 36
                                         }, undefined)
                                     )
                                 ]
                             }, void 0, true, {
                                 fileName: "src/SearchParams.js",
-                                lineNumber: 47,
+                                lineNumber: 34,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 45,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -24803,7 +24802,7 @@ const SearchParams = ()=>{
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
                                     }, void 0, false, {
                                         fileName: "src/SearchParams.js",
-                                        lineNumber: 73,
+                                        lineNumber: 48,
                                         columnNumber: 13
                                     }, undefined),
                                     breedList.map((breed)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
@@ -24811,47 +24810,47 @@ const SearchParams = ()=>{
                                             children: breed
                                         }, breed, false, {
                                             fileName: "src/SearchParams.js",
-                                            lineNumber: 75,
-                                            columnNumber: 15
+                                            lineNumber: 49,
+                                            columnNumber: 37
                                         }, undefined)
                                     )
                                 ]
                             }, void 0, true, {
                                 fileName: "src/SearchParams.js",
-                                lineNumber: 66,
+                                lineNumber: 47,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 64,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                         children: "Submit"
                     }, void 0, false, {
                         fileName: "src/SearchParams.js",
-                        lineNumber: 81,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/SearchParams.js",
-                lineNumber: 30,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_resultsDefault.default, {
                 pets: pets
             }, void 0, false, {
                 fileName: "src/SearchParams.js",
-                lineNumber: 83,
+                lineNumber: 56,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/SearchParams.js",
-        lineNumber: 29,
-        columnNumber: 5
+        lineNumber: 23,
+        columnNumber: 10
     }, undefined));
 };
 _s(SearchParams, "q8/LU9I253d+JtMU1/28JGtW9Bc=", false, function() {
@@ -25055,8 +25054,8 @@ exports.default = Results = (props)=>{
             children: "There no pets available."
         }, void 0, false, {
             fileName: "src/Results.js",
-            lineNumber: 8,
-            columnNumber: 9
+            lineNumber: 7,
+            columnNumber: 23
         }, undefined) : pets.map((pet)=>{
             return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_petDefault.default, {
                 animal: pet.animal,
@@ -25067,14 +25066,14 @@ exports.default = Results = (props)=>{
                 id: pet.id
             }, pet.id, false, {
                 fileName: "src/Results.js",
-                lineNumber: 12,
-                columnNumber: 13
+                lineNumber: 8,
+                columnNumber: 14
             }, undefined));
         })
     }, void 0, false, {
         fileName: "src/Results.js",
         lineNumber: 6,
-        columnNumber: 5
+        columnNumber: 10
     }, undefined));
 };
 
@@ -25109,12 +25108,12 @@ const Pet = (props)=>{
                     alt: name
                 }, void 0, false, {
                     fileName: "src/Pet.js",
-                    lineNumber: 14,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Pet.js",
-                lineNumber: 13,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25124,27 +25123,27 @@ const Pet = (props)=>{
                         children: name
                     }, void 0, false, {
                         fileName: "src/Pet.js",
-                        lineNumber: 17,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
                         children: `${animal} — ${breed} — ${location}`
                     }, void 0, false, {
                         fileName: "src/Pet.js",
-                        lineNumber: 18,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Pet.js",
-                lineNumber: 16,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Pet.js",
-        lineNumber: 12,
-        columnNumber: 5
+        lineNumber: 18,
+        columnNumber: 10
     }, undefined));
 };
 _c = Pet;
@@ -25170,12 +25169,22 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
 class Details extends _react.Component {
-    constructor(props){
-        super(props);
-        this.state = {
+    constructor(...args){
+        super(...args);
+        _defineProperty(this, "state", {
             loading: true
-        };
+        });
     }
     async componentDidMount() {
         console.log(this.props);
@@ -25190,7 +25199,7 @@ class Details extends _react.Component {
             children: "Loading..."
         }, void 0, false, {
             fileName: "src/Details.js",
-            lineNumber: 21,
+            lineNumber: 26,
             columnNumber: 14
         }, this));
         const { animal , breed , city , state , description , name  } = this.state;
@@ -25202,14 +25211,14 @@ class Details extends _react.Component {
                         children: name
                     }, void 0, false, {
                         fileName: "src/Details.js",
-                        lineNumber: 28,
+                        lineNumber: 39,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
                         children: `${animal} — ${breed} — ${city}, ${state}`
                     }, void 0, false, {
                         fileName: "src/Details.js",
-                        lineNumber: 29,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -25219,26 +25228,26 @@ class Details extends _react.Component {
                         ]
                     }, void 0, true, {
                         fileName: "src/Details.js",
-                        lineNumber: 30,
+                        lineNumber: 41,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                         children: description
                     }, void 0, false, {
                         fileName: "src/Details.js",
-                        lineNumber: 31,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Details.js",
-                lineNumber: 27,
+                lineNumber: 38,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "src/Details.js",
-            lineNumber: 26,
-            columnNumber: 7
+            lineNumber: 37,
+            columnNumber: 12
         }, this));
     }
 }
@@ -25249,11 +25258,11 @@ const WrappedDetails = ()=>{
         id: id
     }, void 0, false, {
         fileName: "src/Details.js",
-        lineNumber: 40,
+        lineNumber: 53,
         columnNumber: 10
     }, undefined));
 };
-_s(WrappedDetails, "yQgCIz/jJfqV1l9s2yoba81MT5A=", false, function() {
+_s(WrappedDetails, "0FkmEimyPcMhLUh7je9gv1ZLpaY=", false, function() {
     return [
         _reactRouterDom.useParams
     ];
@@ -25268,6 +25277,6 @@ $RefreshReg$(_c, "WrappedDetails");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"fdOAw","react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
 
 //# sourceMappingURL=index.7271efb6.js.map
