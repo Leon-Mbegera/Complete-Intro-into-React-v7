@@ -25205,62 +25205,7 @@ class Details extends _react.Component {
             lineNumber: 27,
             columnNumber: 14
         }, this));
-        const { animal , breed , city , state , description , name , images  } = this.state;
-        return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-            className: "details",
-            children: [
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_carouselDefault.default, {
-                    images: images
-                }, void 0, false, {
-                    fileName: "src/Details.js",
-                    lineNumber: 40,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    children: [
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
-                            children: name
-                        }, void 0, false, {
-                            fileName: "src/Details.js",
-                            lineNumber: 42,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
-                            children: `${animal} — ${breed} — ${city}, ${state}`
-                        }, void 0, false, {
-                            fileName: "src/Details.js",
-                            lineNumber: 43,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
-                            children: [
-                                "Adopt ",
-                                name
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Details.js",
-                            lineNumber: 44,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                            children: description
-                        }, void 0, false, {
-                            fileName: "src/Details.js",
-                            lineNumber: 45,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Details.js",
-                    lineNumber: 41,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/Details.js",
-            lineNumber: 39,
-            columnNumber: 12
-        }, this));
+        throw new Error("Catch me, I'm meant for you");
     }
 }
 const WrappedDetails = ()=>{
@@ -25272,14 +25217,14 @@ const WrappedDetails = ()=>{
                 id: id
             }, void 0, false, {
                 fileName: "src/Details.js",
-                lineNumber: 57,
+                lineNumber: 58,
                 columnNumber: 7
             }, undefined),
             ";"
         ]
     }, void 0, true, {
         fileName: "src/Details.js",
-        lineNumber: 56,
+        lineNumber: 57,
         columnNumber: 10
     }, undefined));
 };
@@ -25412,7 +25357,8 @@ class ErrorBoundary extends _react.Component {
     constructor(...args){
         super(...args);
         _defineProperty(this, "state", {
-            hasError: false
+            hasError: false,
+            redirect: false
         });
     }
     static getDerivedStateFromError(error) {
@@ -25423,8 +25369,21 @@ class ErrorBoundary extends _react.Component {
     componentDidCatch(error, info) {
         console.error("Error boundary caught an error", error, info);
     }
+    componentDidUpdate() {
+        if (this.state.hasError) setTimeout(()=>this.setState({
+                redirect: true
+            })
+        , 5000);
+    }
     render() {
-        if (this.state.hasError) return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
+        if (this.state.redirect) return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Navigate, {
+            to: "/"
+        }, void 0, false, {
+            fileName: "ErrorBoundary.js",
+            lineNumber: 36,
+            columnNumber: 14
+        }, this));
+        else if (this.state.hasError) return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
             children: [
                 "There was an error with this listing.",
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
@@ -25432,14 +25391,14 @@ class ErrorBoundary extends _react.Component {
                     children: "Click here"
                 }, void 0, false, {
                     fileName: "ErrorBoundary.js",
-                    lineNumber: 29,
+                    lineNumber: 40,
                     columnNumber: 11
                 }, this),
                 " to back to the home page or wait five seconds."
             ]
         }, void 0, true, {
             fileName: "ErrorBoundary.js",
-            lineNumber: 27,
+            lineNumber: 38,
             columnNumber: 14
         }, this));
         return this.props.children;
