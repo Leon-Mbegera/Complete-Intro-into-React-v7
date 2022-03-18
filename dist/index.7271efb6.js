@@ -25298,6 +25298,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 function _defineProperty(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,
@@ -25308,11 +25309,16 @@ function _defineProperty(obj, key, value) {
     else obj[key] = value;
     return obj;
 }
-class Carousel extends _react.Component {
+class Carousel extends _reactDefault.default.Component {
     constructor(...args){
         super(...args);
         _defineProperty(this, "state", {
             active: 0
+        });
+    }
+    handleIndexClick(event) {
+        this.setState({
+            active: event.target.dataset.index
         });
     }
     render() {
@@ -25326,30 +25332,32 @@ class Carousel extends _react.Component {
                     alt: "animal"
                 }, void 0, false, {
                     fileName: "Carousel.js",
-                    lineNumber: 22,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                     className: "carousel-smaller",
                     children: images.map((photo, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("img", {
+                            "data-index": index,
                             src: photo,
                             className: index === active ? "active" : "",
-                            alt: "animal thumbnail"
+                            alt: "animal thumbnail",
+                            onClick: (e)=>e.target.dataset.index
                         }, photo, false, {
                             fileName: "Carousel.js",
-                            lineNumber: 25,
+                            lineNumber: 31,
                             columnNumber: 9
                         }, this)
                     )
                 }, void 0, false, {
                     fileName: "Carousel.js",
-                    lineNumber: 23,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "Carousel.js",
-            lineNumber: 21,
+            lineNumber: 27,
             columnNumber: 12
         }, this));
     }
@@ -25366,6 +25374,6 @@ exports.default = Carousel;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
 
 //# sourceMappingURL=index.7271efb6.js.map
