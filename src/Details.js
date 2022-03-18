@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "../Carousel";
+import ErrorBoundary from "../ErrorBoundary";
 
 class Details extends Component {
   state = { loading: true };
@@ -36,7 +37,11 @@ class Details extends Component {
 
 const WrappedDetails = () => {
   const { id } = useParams();
-  return <Details id={id} />;
+  return (
+    <ErrorBoundary>
+      <Details id={id} />;
+    </ErrorBoundary>
+  );
 };
 
 export default WrappedDetails;
