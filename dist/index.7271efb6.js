@@ -25318,7 +25318,7 @@ class Carousel extends _reactDefault.default.Component {
     }
     handleIndexClick(event) {
         this.setState({
-            active: event.target.dataset.index
+            active: +event.target.dataset.index
         });
     }
     render() {
@@ -25342,7 +25342,7 @@ class Carousel extends _reactDefault.default.Component {
                             src: photo,
                             className: index === active ? "active" : "",
                             alt: "animal thumbnail",
-                            onClick: (e)=>e.target.dataset.index
+                            onClick: (e)=>this.handleIndexClick(e.target.dataset.index)
                         }, photo, false, {
                             fileName: "Carousel.js",
                             lineNumber: 31,
