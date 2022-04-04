@@ -1,4 +1,5 @@
 import { Component } from "react";
+// import { Component } from "react/cjs/react.production.min";
 import { useParams } from "react-router-dom";
 import Carousel from "../Carousel";
 import ErrorBoundary from "../ErrorBoundary";
@@ -31,7 +32,7 @@ class Details extends Component {
           <h1>{name}</h1>
           <h2>{`${animal} — ${breed} — ${city}, ${state}`}</h2>
           <ThemeContext.Consumer>
-            {(theme) => {
+            {([theme]) => {
               return (
                 <button style={{ backgroundColor: theme }}>Adopt {name}</button>
               );

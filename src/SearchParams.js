@@ -12,7 +12,8 @@ const SearchParams = () => {
   const [breed, updateBreed] = useState("");
   const [pets, setPets] = useState([]);
   const [breedList] = useBreedList(animal);
-  const theme = useContext(ThemeContext);
+  const [theme, setTheme] = useContext(ThemeContext);
+  console.log(theme, setTheme);
 
   useEffect(() => {
     requestPets();
@@ -78,6 +79,20 @@ const SearchParams = () => {
                 {breed}
               </option>
             ))}
+          </select>
+        </label>
+        <label>
+          Theme
+          <select
+            value={theme}
+            onChange={(e) => setTheme(e.target.value)}
+            onBlur={(e) => setTheme(e.target.value)}
+          >
+            <option value="peru">Peru</option>
+            <option value="black">Peru</option>
+            <option value="green">Peru</option>
+            <option value="pink">Peru</option>
+            <option value="yellow">Peru</option>
           </select>
         </label>
         <button style={{ backgroundColor: theme }}>Submit</button>
