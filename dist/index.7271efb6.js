@@ -25205,7 +25205,63 @@ class Details extends _react.Component {
             lineNumber: 27,
             columnNumber: 14
         }, this));
-        throw new Error("Catch me, I'm meant for you");
+         // throw new Error("Catch me, I'm meant for you");
+        const { animal , breed , city , state , description , name , images  } = this.state;
+        return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: "details",
+            children: [
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_carouselDefault.default, {
+                    images: images
+                }, void 0, false, {
+                    fileName: "src/Details.js",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
+                            children: name
+                        }, void 0, false, {
+                            fileName: "src/Details.js",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
+                            children: `${animal} — ${breed} — ${city}, ${state}`
+                        }, void 0, false, {
+                            fileName: "src/Details.js",
+                            lineNumber: 44,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                            children: [
+                                "Adopt ",
+                                name
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Details.js",
+                            lineNumber: 45,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                            children: description
+                        }, void 0, false, {
+                            fileName: "src/Details.js",
+                            lineNumber: 46,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Details.js",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/Details.js",
+            lineNumber: 40,
+            columnNumber: 12
+        }, this));
     }
 }
 const WrappedDetails = ()=>{
@@ -25331,7 +25387,7 @@ exports.default = Carousel;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"1QOli":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1QOli":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7ca0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

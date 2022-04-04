@@ -19,7 +19,7 @@ class Details extends Component {
       return <div>Loading...</div>;
     }
 
-    throw new Error("Catch me, I'm meant for you");
+    // throw new Error("Catch me, I'm meant for you");
 
     const { animal, breed, city, state, description, name, images } =
       this.state;
