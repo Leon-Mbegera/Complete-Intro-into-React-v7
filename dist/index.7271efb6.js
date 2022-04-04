@@ -1012,67 +1012,80 @@ var _searchParams = require("./SearchParams");
 var _searchParamsDefault = parcelHelpers.interopDefault(_searchParams);
 var _details = require("./Details");
 var _detailsDefault = parcelHelpers.interopDefault(_details);
+var _themeContext = require("./ThemeContext");
+var _themeContextDefault = parcelHelpers.interopDefault(_themeContext);
+var _s = $RefreshSig$();
 const App = ()=>{
+    _s();
+    const theme = useState("darkblue");
     return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_react.StrictMode, {
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.BrowserRouter, {
-            children: [
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("header", {
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
-                        to: "/",
-                        children: "Adopt Me!"
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 12,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Routes, {
-                    children: [
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
-                            path: "/details/:id",
-                            element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_detailsDefault.default, {
-                            }, void 0, false, void 0, void 0)
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_themeContextDefault.default.Provider, {
+            value: theme,
+            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.BrowserRouter, {
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("header", {
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
+                            to: "/",
+                            children: "Adopt Me!"
                         }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 15,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
-                            path: "/",
-                            element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
-                            }, void 0, false, void 0, void 0)
-                        }, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 16,
-                            columnNumber: 11
+                            columnNumber: 13
                         }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/App.js",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Routes, {
+                        children: [
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
+                                path: "/details/:id",
+                                element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_detailsDefault.default, {
+                                }, void 0, false, void 0, void 0)
+                            }, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 18,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
+                                path: "/",
+                                element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {
+                                }, void 0, false, void 0, void 0)
+                            }, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 19,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.js",
+                        lineNumber: 17,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.js",
+                lineNumber: 13,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 10,
+            lineNumber: 12,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 9,
+        lineNumber: 11,
         columnNumber: 10
     }, undefined));
 };
+_s(App, "pfe5KIbSWkMUbmuvnyEw3GJEiLI=");
 _c = App;
 _reactDom.render(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(App, {
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 22,
+    lineNumber: 26,
     columnNumber: 8
 }, undefined), document.getElementById("root"));
 var _c;
@@ -1083,7 +1096,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","react-dom":"j6uA9","./SearchParams":"gR5jP","./Details":"aUpxx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","react-dom":"j6uA9","./SearchParams":"gR5jP","./Details":"aUpxx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ThemeContext":"4b9qW"}],"iTorj":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
 
@@ -25467,6 +25480,28 @@ exports.default = ErrorBoundary;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4b9qW":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f9ac = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f9ac.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+const ThemeContext = /*#__PURE__*/ _react.createContext([
+    "green",
+    ()=>{
+    }
+]);
+exports.default = ThemeContext;
+
+  $parcel$ReactRefreshHelpers$f9ac.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
 
 //# sourceMappingURL=index.7271efb6.js.map
