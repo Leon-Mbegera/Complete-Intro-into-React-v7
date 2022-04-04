@@ -25276,15 +25276,23 @@ class Details extends _react.Component {
                             lineNumber: 45,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
-                            style: {
-                                backgroundColor: this.props.theme
-                            },
-                            children: [
-                                "Adopt ",
-                                name
-                            ]
-                        }, void 0, true, {
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_themeContextDefault.default.Consumer, {
+                            children: (theme)=>{
+                                return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                    style: {
+                                        backgroundColor: theme
+                                    },
+                                    children: [
+                                        "Adopt ",
+                                        name
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Details.js",
+                                    lineNumber: 48,
+                                    columnNumber: 20
+                                }, this));
+                            }
+                        }, void 0, false, {
                             fileName: "src/Details.js",
                             lineNumber: 46,
                             columnNumber: 11
@@ -25293,7 +25301,7 @@ class Details extends _react.Component {
                             children: description
                         }, void 0, false, {
                             fileName: "src/Details.js",
-                            lineNumber: 51,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this)
                     ]
@@ -25313,26 +25321,24 @@ class Details extends _react.Component {
 const WrappedDetails = ()=>{
     _s();
     const { id  } = _reactRouterDom.useParams();
-    const theme = _react.useContext(_themeContextDefault.default);
     return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_errorBoundaryDefault.default, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Details, {
-                id: id,
-                theme: theme
+                id: id
             }, void 0, false, {
                 fileName: "src/Details.js",
-                lineNumber: 64,
+                lineNumber: 65,
                 columnNumber: 7
             }, undefined),
             ";"
         ]
     }, void 0, true, {
         fileName: "src/Details.js",
-        lineNumber: 63,
+        lineNumber: 64,
         columnNumber: 10
     }, undefined));
 };
-_s(WrappedDetails, "6eXPLi9lzH/IjYg0ZMWaQDsB9+M=", false, function() {
+_s(WrappedDetails, "0FkmEimyPcMhLUh7je9gv1ZLpaY=", false, function() {
     return [
         _reactRouterDom.useParams
     ];
