@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { render } from "react-dom";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ import Details from "./Details";
 import ThemeContext from "./ThemeContext";
 
 const App = () => {
-  const theme = useState("darkblue");
+  const [theme] = useState("darkblue");
   return (
     <StrictMode>
       <ThemeContext.Provider value={theme}>
