@@ -2,7 +2,6 @@ import { useEffect, useState, useContext } from "react";
 import useBreedList from "./useBreedList";
 import Results from "./Results";
 import ThemeContext from "./ThemeContext";
-// import { useContext } from "react/cjs/react.production.min";
 
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
