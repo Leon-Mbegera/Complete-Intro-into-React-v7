@@ -1,6 +1,5 @@
 import { createContext } from "react";
 
-const ThemeContext = createContext("green", () => {});
-// console.log("What about you", ThemeContext);
+const ThemeContext = createContext();
 
 export default ThemeContext;

@@ -24855,39 +24855,39 @@ const SearchParams = ()=>{
                                 children: [
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
                                         value: "peru",
-                                        children: "Peru"
+                                        children: "peru"
                                     }, void 0, false, {
                                         fileName: "src/SearchParams.js",
                                         lineNumber: 60,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
-                                        value: "black",
-                                        children: "Peru"
+                                        value: "darkblue",
+                                        children: "darkblue"
                                     }, void 0, false, {
                                         fileName: "src/SearchParams.js",
                                         lineNumber: 61,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
-                                        value: "green",
-                                        children: "Peru"
+                                        value: "chartreuse",
+                                        children: "chartreuse"
                                     }, void 0, false, {
                                         fileName: "src/SearchParams.js",
                                         lineNumber: 62,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
-                                        value: "pink",
-                                        children: "Peru"
+                                        value: "mediumorchid",
+                                        children: "mediumorchid"
                                     }, void 0, false, {
                                         fileName: "src/SearchParams.js",
                                         lineNumber: 63,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
-                                        value: "yellow",
-                                        children: "Peru"
+                                        value: "#f06d06",
+                                        children: "orange"
                                     }, void 0, false, {
                                         fileName: "src/SearchParams.js",
                                         lineNumber: 64,
@@ -25248,8 +25248,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-const ThemeContext = /*#__PURE__*/ _react.createContext("green", ()=>{
-}); // console.log("What about you", ThemeContext);
+const ThemeContext = /*#__PURE__*/ _react.createContext();
 exports.default = ThemeContext;
 
   $parcel$ReactRefreshHelpers$f9ac.postlude(module);
@@ -25413,7 +25412,7 @@ $RefreshReg$(_c, "WrappedDetails");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Carousel":"20vbv","../ErrorBoundary":"1QOli","./ThemeContext":"4b9qW","react":"21dqq"}],"20vbv":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Carousel":"20vbv","../ErrorBoundary":"1QOli","./ThemeContext":"4b9qW"}],"20vbv":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3dba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
