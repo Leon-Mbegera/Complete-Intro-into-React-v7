@@ -25647,9 +25647,7 @@ $parcel$ReactRefreshHelpers$7f78.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
 var _s = $RefreshSig$();
 const Modal = ({ children  })=>{
@@ -25662,13 +25660,7 @@ const Modal = ({ children  })=>{
         return ()=>modalRoot.removeChild(elementRef.current)
         ;
     }, []);
-    return(/*#__PURE__*/ _reactDom.createPortal(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        children: children
-    }, void 0, false, {
-        fileName: "src/Modal.js",
-        lineNumber: 18,
-        columnNumber: 23
-    }, undefined), elementRef.current));
+    return(/*#__PURE__*/ _reactDom.createPortal(children, elementRef.current));
 };
 _s(Modal, "CKe/C9l/PZDcdMrjDfTWxieUegY=");
 _c = Modal;
@@ -25681,6 +25673,6 @@ $RefreshReg$(_c, "Modal");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
+},{"react":"21dqq","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequireaddb")
 
 //# sourceMappingURL=index.7271efb6.js.map
