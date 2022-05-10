@@ -32,5 +32,19 @@
   },
   "browserslist": [
     "last 2 Chrome versions"
-  ]
+  ],
+  "targets": {
+    "frontend": {
+      "source": "src/index.html",
+      "publicUrl": "/frontend"
+    },
+    "backend": {
+      "source": "server/index.js",
+      "optimize": false,
+      "context": "node",
+      "engines": {
+        "node": ">=14"
+      }
+    }
+  }
 }
