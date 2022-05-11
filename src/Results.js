@@ -1,6 +1,6 @@
 import Pet from "./Pet";
 
-export default Results = (props) => {
+const Results = (props) => {
   const { pets } = props;
   return (
     <div className="search">
@@ -24,3 +24,5 @@ export default Results = (props) => {
     </div>
   );
 };
+
+export default Results;

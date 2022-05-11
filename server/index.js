@@ -3,7 +3,6 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import fs from "fs";
 import App from "../src/App";
-import exp from "constants";
 
 const PORT = process.env.PORT || 3000;
 
